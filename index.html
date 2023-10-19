@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Voiculescu Ion-Daniel</title>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="src/css/general.css">
+    <link rel="stylesheet" href="src/css/background.css">
+    <link rel="stylesheet" href="src/css/card.css">
+
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Set emoji as a Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <script>
+        function handleLoader() {
+            setTimeout(function () {
+                $('#loader-wrapper').fadeOut(500);
+            }, 1000);
+        }
+    </script>
+</head>
+
+<body onload="handleLoader()">
+    <!-- Page loader -->
+    <div id="loader-wrapper">
+        <div class="loader">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <section class="page">
+
+        <!-- Live background effect -->
+        <div class="background-live">
+            <ul class="background-particles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- Card section -->
+        <div class="container">
+            <div class="card">
+                <div class="card-header"></div>
+
+                <div class="card-name">Voiculescu Ion-Daniel</div>
+                <div class="card-title">Software Engineer</div>
+                <div class="card-social">
+                    <a target="_blank" href="https://voiculescuiondaniel.ro/"><span class="fa fa-dribbble"></span></a>
+                    <a target="_blank" href="https://twitter.com/voiculescuid/"><span class="fa fa-twitter"></span></a>
+                    <a target="_blank" href="https://github.com/voiculescuid/"><span class="fa fa-github"></span></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/voiculescuid/"><span
+                            class="fa fa-linkedin"></span></a>
+                </div>
+
+                <div class="card-links">
+                    <a class="card-link" target="_blank" href="src/resource/RESUME-2023.pdf" download>
+                        <span class="card-link-text">Resume </span><span class="fa fa-cloud-download"></span>
+                    </a>
+                    <a class="card-link" href="mailto:voiculescuid@gmail.com">
+                        <span class="card-link-text">Contact Me</span><span class="fa fa-envelope"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Copyright section -->
+    <footer>
+        <p class="copyright">Copyright © Voiculescu Ion-Daniel, 2023</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>

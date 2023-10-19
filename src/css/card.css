@@ -1,0 +1,154 @@
+@import "colors.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.card {
+  width: 450px;
+  height: 650px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  box-shadow: -10px -10px rgba(100, 100, 100, 0.1);
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.card-header {
+  top: 0px;
+  width: 100%;
+  height: 350px;
+  display: block;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: top;
+  background-image: url("../resource/profile.jpg")
+}
+
+.card-header::before {
+  content: '';
+  width: 100%;
+  height: 70%;
+  right: -25%;
+  bottom: -55%;
+  position: absolute;
+  background-color: var(--primary);
+  transform: rotate(-15deg);
+}
+
+.card-header:after {
+  content: '';
+  width: 100%;
+  height: 70%;
+  left: -25%;
+  bottom: -55%;
+  position: absolute;
+  background-color: var(--primary);
+  transform: rotate(15deg);
+}
+
+.card-header-profile {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 10;
+}
+
+.card-header-profile img {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: -7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.card-name {
+  font-family: 'Poppins';
+  font-size: 32px;
+  margin-top: 200px;
+  position: relative;
+  color: var(--on-primary);
+}
+
+.card-title {
+  font-family: 'Poppins';
+  font-size: 17px;
+  margin: 10px;
+  position: relative;
+  color: var(--highlight);
+}
+
+.card-social {
+  margin-top: 20px;
+}
+
+.card-social a {
+  font-family: 'Poppins';
+  font-size: 15px;
+  margin-left: 15px;
+  transition: 0.2s;
+  color: var(--on-primary);
+}
+
+.card-social a:hover {
+  transition: 0.2s;
+  color: var(--highlight);
+}
+
+.card-social a:first-child {
+  margin-left: 0;
+}
+
+.card-links {
+  opacity: 0.7;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  text-align: center;
+  z-index: 10;
+}
+
+.card-links::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background: radial-gradient(ellipse at center, var(--on-primary) 0, rgba(255, 255, 255, 0) 70%);
+}
+
+.card-link {
+  display: block;
+  position: relative;
+  width: 50%;
+  line-height: 70px;
+  font-family: 'Poppins';
+  font-size: 14;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  color: var(--on-primary);
+}
+
+.card-link:hover {
+  transition: 0.2s;
+  color: var(--highlight);
+}
+
+.card-link-text {
+  margin-right: 10px;
+}

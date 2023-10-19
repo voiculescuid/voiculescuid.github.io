@@ -1,0 +1,40 @@
+:root {
+    --highlight: #809224;
+
+    --dark-primary: #21262d;
+    --dark-secondary: #21262d;
+    --dark-background: linear-gradient(to bottom right, #080a0e 0, #0d1117 100%);
+    --dark-on-primary: #a5a5a5;
+    --dark-on-secondary: #ffffff;
+    --dark-on-background: #ffffff21;
+
+    --light-primary: #ffffff;
+    --light-secondary: #ffffff;
+    --light-background: linear-gradient(to bottom right, #85898a 0, #e5e6e8 100%);
+    --light-on-primary: #0000008a;
+    --light-on-secondary: #070707;
+    --light-on-background: #1b1b1b1e;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: var(--dark-primary);
+        --secondary: var(--dark-secondary);
+        --background: var(--dark-background);
+        --on-primary: var(--dark-on-primary);
+        --on-secondary: var(--dark-on-secondary);
+        --on-background: var(--dark-on-background);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary: var(--light-primary);
+        --secondary: var(--light-secondary);
+        --background: var(--light-background);
+        --on-primary: var(--light-on-primary);
+        --on-secondary: var(--light-on-secondary);
+        --on-background: var(--light-on-background);
+    }
+}
